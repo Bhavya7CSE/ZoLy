@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cream: #FFF8F1;
+    --color-zoey-blue: #B8DDF8;
+    --color-zoey-ice: #E2F1FC;
+    --color-lily-lavender: #D8C5F5;
+    --color-lily-blush: #FCE7F3;
+    --color-butter: #F4D98A;
+    --color-berry: #A43E68;
+    --color-brown-text: #2D221E;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FFF8F1;
+    color: #2D221E;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  h1, h2, h3, .font-fairytale {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  code, pre, .font-mono-tech {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+/* 1. Crystal Music Box: Melodic float with gentle chime tilt */
+@keyframes toy-musicbox {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  35% {
+    transform: translateY(-7px) rotate(1.8deg) scale(1.01);
+  }
+  70% {
+    transform: translateY(-3px) rotate(-1.2deg) scale(0.99);
+  }
+}
+
+/* 2. Enchanted Storybook: Floating lore tome with slow fluttering page drift */
+@keyframes toy-storybook {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  40% {
+    transform: translateY(-9px) rotate(-2deg);
+  }
+  80% {
+    transform: translateY(-4px) rotate(1.5deg);
+  }
+}
+
+/* 3. Dream Delivery Map: Unfurled parchment buoyant river wave */
+@keyframes toy-map {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) skewX(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg) skewX(0.8deg);
+  }
+}
+
+/* 4. Toy Arcade: Playful bouncy arcade cabinet hover */
+@keyframes toy-arcade {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  30% {
+    transform: translateY(-8px) scale(1.02);
+  }
+  60% {
+    transform: translateY(-2px) scale(0.99);
+  }
+}
+
+/* 5. Moon Lantern: Gentle pendulum lantern swing */
+@keyframes toy-lantern {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-6px) rotate(2.5deg);
+  }
+  66% {
+    transform: translateY(-8px) rotate(-2.5deg);
+  }
+}
+
+/* 6. Crystal Phone: Rhythmic nostalgic ring wobble */
+@keyframes toy-phone {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  45% {
+    transform: translateY(-7px) rotate(-1.5deg);
+  }
+  85% {
+    transform: translateY(-3px) rotate(1.8deg);
+  }
+}
+
+/* 7. Floating Envelope: Fluttering origami fairy wings glider */
+@keyframes toy-envelope {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  40% {
+    transform: translateY(-10px) rotate(2deg) scale(1.02);
+  }
+  75% {
+    transform: translateY(-4px) rotate(-1.5deg) scale(0.99);
+  }
+}
+
+/* 8. Secret Celestial Locket: Celestial orbital tilt and pulse */
+@keyframes toy-locket {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg) scale(1.03);
+  }
+}
+
+/* 9. Royal Twin Cameo: Stately heirloom breathing suspension */
+@keyframes toy-cameo {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(-1.5deg);
+  }
+}
+
+.animate-toy-musicbox {
+  animation: toy-musicbox 3.8s ease-in-out infinite;
+}
+
+.animate-toy-storybook {
+  animation: toy-storybook 4.5s ease-in-out infinite;
+}
+
+.animate-toy-map {
+  animation: toy-map 4.2s ease-in-out infinite;
+}
+
+.animate-toy-arcade {
+  animation: toy-arcade 3.4s ease-in-out infinite;
+}
+
+.animate-toy-lantern {
+  animation: toy-lantern 4.8s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.animate-toy-phone {
+  animation: toy-phone 3.9s ease-in-out infinite;
+}
+
+.animate-toy-envelope {
+  animation: toy-envelope 3.3s ease-in-out infinite;
+}
+
+.animate-toy-locket {
+  animation: toy-locket 4.0s ease-in-out infinite;
+}
+
+.animate-toy-cameo {
+  animation: toy-cameo 4.6s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+/* Custom whimsical scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8C5F5;
+  border-radius: 9999px;
+  border: 2px solid #FFF8F1;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8DDF8;
+}

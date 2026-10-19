@@ -1,0 +1,8 @@
+{
+  "name": "Zoey & Lily — Two Little Wishes, One Endless Sky",
+  "description": "A fairytale 3D interactive experience featuring baby princesses Zoey and Lily, their Crystal and Aurora kingdoms, Lullaby Lab, and magical activities for haX.baby.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
